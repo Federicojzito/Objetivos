@@ -1,6 +1,6 @@
 
 //Variables
-var inputs = document.getElementsByClassName('formulario__input');
+var inputs = document.getElementsByClassName('form__input');
 
 /* For Range if it has at least 1 character it is fixed*/
 
