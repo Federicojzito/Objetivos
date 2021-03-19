@@ -41,6 +41,11 @@ body {
   background-color: white; }
 
 /*Variables*/
+/* NavBar */
+.nav {
+  text-decoration: none;
+  color: inherit; }
+
 /*Titles*/
 .principal__title {
   text-align: center;
