@@ -27,11 +27,10 @@
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
   z-index: 100; }
-
-.float:hover {
-  text-decoration: none;
-  color: #25d366;
-  background-color: #fff; }
+  .float:hover {
+    text-decoration: none;
+    color: red;
+    background-color: #fff; }
 
 .my-float {
   margin-top: 16px; }
