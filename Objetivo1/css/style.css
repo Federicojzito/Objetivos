@@ -52,8 +52,7 @@ body {
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  border: salmon; }
+  font-family: 'Courier New', Courier, monospace; }
 
 /*IMG*/
 .img__company {
@@ -97,3 +96,49 @@ body {
     grid-column-start: span 3; }
   .gallery__item:nth-child(2) {
     grid-column-start: span 3; } }
+
+.form {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  position: relative; }
+
+.form__title {
+  text-align: center;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.7); }
+
+.form__input, .form__label, .form__submit {
+  display: block;
+  width: 100%;
+  font-size: 1.3em; }
+
+.form__input {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px; }
+
+.form__input:focus + .form__label {
+  margin-top: -135px; }
+
+.form__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: -20;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s; }
+
+.form__submit {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none; }
+
+.select {
+  margin-top: -135px; }
