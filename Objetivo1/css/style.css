@@ -48,6 +48,13 @@ body {
   margin-top: 20px;
   font-family: "Montserrat", cursive; }
 
+.secondary__title {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  border: salmon; }
+
 /*IMG*/
 .img__company {
   display: block;
@@ -78,6 +85,7 @@ body {
 .gallery__item:nth-child(3) {
   grid-column-start: span 1; }
 
+/*Responsive*/
 @media (min-width: 768) {
   .gallery-container {
     grid-template-columns: repeat(4, 1fr); }
