@@ -97,6 +97,7 @@ body {
   .gallery__item:nth-child(2) {
     grid-column-start: span 3; } }
 
+/*Forms*/
 .form {
   width: 500px;
   max-width: 100%;
