@@ -1,0 +1,112 @@
+/* GRID PADRE */
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+    grid-gap: 5px;
+}
+
+/* GRID UNO INLINE BLOCK*/
+.grid-item1{
+    background-color: rgb(9, 223, 247);
+    border: black 3px solid;
+    text-align: start;
+}
+
+.grid-inline-block{
+    display: inline-block;
+}
+
+
+/* GRID DOS FLEX*/
+.grid-item2{
+    background: palevioletred;
+    border: black 3px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.grid-flex{
+    height: auto;
+    width: auto;
+
+}
+
+
+/* GRID TRES GRID*/
+.grid-item3{
+
+    border: black 3px solid;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(6,1fr);
+}
+
+
+/* GRID CUATRO GRID*/
+.grid-item4{
+    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,1fr);
+    border: black 3px solid;
+}
+
+/* GRID POSITION ABSOLUTE */
+.grid-position1{
+    position: absolute;
+    bottom: 200px;
+    right: 300px;
+    
+}
+.grid-position2{
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    
+}
+.grid-position3{
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    
+}
+.grid-position4{
+    position: absolute;
+    bottom: 100px;
+    right: 300px;
+    
+}
+.grid-position5{
+    position: absolute;
+    bottom: 10px;
+    right: 300px;
+    
+}
+.grid-position6{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    
+}
+
+
+/* CELDAS IMPARES */
+.grid-item3__grid:nth-child(3n+3) {
+    background-color: red;
+}
+
+.grid-inline-block:nth-child(3n+3) {
+    background-color: red;
+  }
+
+.grid-flex:nth-child(3n+3) {
+    background-color: red;
+  }
+
+.grid-position3,.grid-position6:nth-child(3n+3) {
+    background-color: red;
+  }
