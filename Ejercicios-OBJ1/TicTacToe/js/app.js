@@ -23,21 +23,24 @@ let gameActive = true,
 
 // FUNCTIONS
 
-
+//StartGame
 function startGame() {
     handleStatusDisplay(CURRENT_PLAYER_TURN());
     listeners();
   }
-  
+
+// addEventListeners
   function listeners() {
     document.querySelector('.game-container').addEventListener('click', handleCellClick);
     document.querySelector('.game-restart').addEventListener('click', handleRestartGame);
   }
-  
+
+// handleStatusDisplay show current game result
   function handleStatusDisplay(message) {
     STATUS_DISPLAY.innerHTML = message;
   }
-  
+
+//handleRestartGame Restart Game
   function handleRestartGame() {
     gameActive = true;
     currentPlayer = "X";
@@ -46,8 +49,10 @@ function startGame() {
     document.querySelectorAll('.game-cell').forEach(cell => cell.innerHTML = "");
   }
   
+// handleCellClick Event Click
   function handleCellClick(clickedCellEvent /** Type Event **/) {
     const clickedCell = clickedCellEvent.target;
+    //IF clickedCell Know which cell you clicked on
     if (clickedCell.classList.contains('game-cell')) {
       const clickedCellIndex = Array.from(clickedCell.parentNode.children).indexOf(clickedCell)
       if (GAME_STATE[clickedCellIndex] !== '' || !gameActive) {
@@ -113,5 +118,6 @@ function startGame() {
       GAME_STATE[i] = ''
     }
   }
-  
+
+//CallBack startGame 
   startGame();
