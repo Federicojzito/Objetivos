@@ -5,7 +5,10 @@
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
   grid-template-areas: "grid-item1 grid-item2" "grid-item3 grid-item4";
-  grid-gap: 5px; }
+  grid-gap: 5px;
+  /* Celdas rojas */ }
+  .grid-container.grid-container div div:nth-child(3n+3) {
+    background-color: red !important; }
 
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
@@ -18,14 +21,12 @@
 .grid-item1 {
   border: black 3px solid;
   text-align: start; }
-
-.grid-item1 div {
-  height: 20%;
-  width: 16%;
-  display: inline-block; }
-
-.grid-item1:hover {
-  background-color: #09dff7; }
+  .grid-item1.grid-item1 div {
+    height: 20%;
+    width: 16%;
+    display: inline-block; }
+  .grid-item1.grid-item1:hover {
+    background-color: #09dff7; }
 
 /* GRID DOS FLEX*/
 .grid-item2 {
@@ -34,13 +35,11 @@
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap; }
-
-.grid-flex {
-  height: 20%;
-  width: 16%; }
-
-.grid-item2:hover {
-  background-color: chocolate; }
+  .grid-item2.grid-item2:hover {
+    background-color: chocolate; }
+  .grid-item2.grid-item2 div {
+    height: 20%;
+    width: 16%; }
 
 /* GRID TRES GRID*/
 .grid-item3 {
@@ -48,23 +47,20 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr); }
-
-.grid-item3:hover {
-  background-color: chocolate; }
+  .grid-item3.grid-item3:hover {
+    background-color: palegoldenrod; }
 
 /* GRID CUATRO GRID*/
 .grid-item4 {
   display: block;
   position: relative;
   border: black 3px solid; }
-
-.grid-item4 div {
-  position: absolute;
-  height: 50%;
-  width: 33%; }
-
-.grid-item4:hover {
-  background-color: yellow; }
+  .grid-item4.grid-item4 div {
+    position: absolute;
+    height: 50%;
+    width: 33%; }
+  .grid-item4.grid-item4:hover {
+    background-color: yellow; }
 
 /* GRID POSITION ABSOLUTE */
 .grid-position1 {
@@ -90,7 +86,3 @@
 .grid-position6 {
   top: 50%;
   left: 66%; }
-
-/* Celdas rojas */
-.grid-container div div:nth-child(3n+3) {
-  background-color: red !important; }
