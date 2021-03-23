@@ -21,23 +21,96 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="Index.html">Company Gaming</a>
+            <a class="navbar-brand" href="#index">Company Gaming</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class=""><a href="Index.html">Home</a></li>
-            <li><a href="./pages/services.html">Services</a></li>
-            <li><a href="./pages/products.html">Products</a></li>
-            <li><a href="./pages/contact.html">Contact</a></li>
+            <li class=""><a href="#index">Home</a></li>
+            <li><a href="#servicies">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
       </nav>
     </header>
-
+    <!-- Section 1 -->
     <!-- Tittle -->
+    <section id="index"></section>
     <h1 class="principal__title">Welcome to the best gaming company </h1>
-
     <!-- Img  -->
     <div class="img__intro"></div>
-
+    </section>
+    <!-- Section 2 -->
+    <section id="servicies">
+        <!-- Crud con LocalStorage -->
+        <div class="container">
+          <div class="row">
+              <div class="col-xs-12">
+    
+                  <h2 class="secondary__title">Enter computer graphics cards you want</h1>
+    
+                  <table id="grid" class="table table-striped">
+                      <thead>
+                          <tr>
+                              <th>Name Graphics Card</th>
+                              <th>Producing Company</th>
+                              <th>Price</th>
+                              <th style="width:80px;">
+                              </th>
+                          </tr>
+                          <tr>
+                              <th>
+                                  <input id="name" type="text" class="form-control" />
+                              </th>
+                              <th>
+                                  <input id="producing_company" type="text" class="form-control" />
+                              </th>
+                              <th>
+                                  <input id="price" type="text" class="form-control" />
+                              </th>
+                              <th>
+                                  <button id="btn-add" class="btn btn-default">Add</button>
+                              </th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+              </div>
+          </div>
+        </div>
+      </section>
+    <!-- Section 3 -->
+    <section id="products">
+        <!-- Products -->
+        <h1 class="principal__title">Products</h1>
+        <div class="gallery-container">
+            <div class="gallery__item">
+                <img src="./img/placa1.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item">
+                <img src="./img/placa2.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item">
+                <img src="./img/placa3.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item">
+                <img src="./img/placa4.jpg" alt="" class="gallery__img">
+            </div>
+            <div class="gallery__item">
+                <img src="./img/placa5.jpg" alt="" class="gallery__img">
+            </div>
+        </div>
+    </section>
+    <!-- Section 4 -->
+    <section id="contact">
+      <!-- Form -->
+      <form action="" class="form">
+        <h2 class="form__title">Contact</h2>
+        <input type="text" class="form__input" required><label for="" class="form__label">Name</label>
+        <input type="email" class="form__input" required><label for="" class="form__label">Email</label>
+        <input type="text" class="form__input" required><label for="" class="form__label">Phone</label>
+        <input type="text" class="form__input" required><label for="" class="form__label">Message</label>
+        <input type="submit" class="form__submit">
+      </form> 
+    </section>
     <!-- Footer -->
     <footer class="final__footer">	
         <a href="">
