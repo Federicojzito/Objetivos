@@ -6,3 +6,7 @@ $background-color:white;
 body{
     background-color: $background-color;
 }
+
+nav{
+    position: sticky;
+}

@@ -6,7 +6,7 @@ $font-family:"Montserrat",cursive;
 
 .principal__title{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     font-family: $font-family;
 }
 
@@ -15,4 +15,12 @@ $font-family:"Montserrat",cursive;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.three__title{
+    font-size: 50px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
