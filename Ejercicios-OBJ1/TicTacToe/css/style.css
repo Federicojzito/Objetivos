@@ -19,16 +19,34 @@ h2 {
   background-color: olivedrab; }
 
 .game-container {
-  background-color: powderblue;
   height: 70vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr); }
   .game-container.game-container div {
+    background-color: #7df5e9;
     display: flex;
-    border: 3px solid #1c646d;
     cursor: pointer;
     font-size: 60px;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+
+.game-cell {
+  border: 2px solid #41858a; }
+
+.game-cell:first-child,
+.game-cell:nth-child(2),
+.game-cell:nth-child(3) {
+  border-top: none; }
+
+.game-cell:nth-child(3n+1) {
+  border-left: none; }
+
+.game-cell:nth-child(3n+3) {
+  border-right: none; }
+
+.game-cell:last-child,
+.game-cell:nth-child(7),
+.game-cell:nth-child(8) {
+  border-bottom: none; }

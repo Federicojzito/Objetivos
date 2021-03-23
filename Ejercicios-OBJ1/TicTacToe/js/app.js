@@ -1,7 +1,7 @@
 // CONSTANTS
 
-const X_CLASS = 'X';
-      CIRCLE_CLASS = 'O';
+const X_CLASS = '×';
+      CIRCLE_CLASS = '○';
       STATUS_DISPLAY = document.querySelector('.game-notification'),
 GAME_STATE = ['','','','','','','','',''],
 WINNINGS = [
