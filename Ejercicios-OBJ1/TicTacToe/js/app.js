@@ -1,25 +1,28 @@
 // CONSTANTS
 
-const STATUS_DISPLAY = document.querySelector('.game-notification'),
+const X_CLASS = 'X';
+      CIRCLE_CLASS = 'O';
+      STATUS_DISPLAY = document.querySelector('.game-notification'),
 GAME_STATE = ['','','','','','','','',''],
 WINNINGS = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6]
+[0, 1, 2],
+[3, 4, 5],
+[6, 7, 8],
+[0, 3, 6],
+[1, 4, 7],
+[2, 5, 8],
+[0, 4, 8],
+[2, 4, 6]
 ],
 WIN_MESSAGE = () => `This Player ${currentPlayer} has won!`,
-DRAW_MESSAGE = () => `The Game ended in a draw`,
+DRAW_MESSAGE = () => `The Game ended in a draw!`,
 CURRENT_PLAYER_TURN = () => `Player turn ${currentPlayer}`;
+
 
 // VARIABLES
 
 let gameActive = true,
-    currentPlayer = 'O';
+    currentPlayer = CIRCLE_CLASS;
 
 // FUNCTIONS
 
@@ -43,7 +46,7 @@ function startGame() {
 //handleRestartGame Restart Game
   function handleRestartGame() {
     gameActive = true;
-    currentPlayer = "X";
+    currentPlayer = X_CLASS;
     restartGameState();
     handleStatusDisplay(CURRENT_PLAYER_TURN());
     document.querySelectorAll('.game-cell').forEach(cell => cell.innerHTML = "");
@@ -111,7 +114,7 @@ function startGame() {
   }
   
   function handlePlayerChange() {
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    currentPlayer = currentPlayer === X_CLASS ? CIRCLE_CLASS : X_CLASS;
     handleStatusDisplay(CURRENT_PLAYER_TURN());
   }
   
