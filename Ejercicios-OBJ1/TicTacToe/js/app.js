@@ -54,6 +54,7 @@ function startGame() {
     const clickedCell = clickedCellEvent.target;
     //IF clickedCell Know which cell you clicked on
     if (clickedCell.classList.contains('game-cell')) {
+      //Array.from call all children of parent's clickedCell, cast them to array.
       const clickedCellIndex = Array.from(clickedCell.parentNode.children).indexOf(clickedCell)
       if (GAME_STATE[clickedCellIndex] !== '' || !gameActive) {
         return false
@@ -63,14 +64,15 @@ function startGame() {
       handleResultValidation();
     }
   }
-  
-  function handleCellPlayed(clickedCell /** object HTML **/, clickedCellIndex) {
+  //handleCellPlayed pass it clickedCell and its Index
+  function handleCellPlayed(clickedCell, clickedCellIndex) {
       // Add in the corresponding position the value either "X" or "O" in the current state of the game
     GAME_STATE[clickedCellIndex] = currentPlayer;   
     // Add the player's value to the HTML
     clickedCell.innerHTML = currentPlayer;
   }
   
+  //handleResultValidation Checking if any player won, lost or tied
   function handleResultValidation() {
     let roundWon = false;
     for (let i = 0; i < WINNINGS.length; i++) {  
@@ -97,6 +99,7 @@ function startGame() {
       return;
     }
   
+    //roundDraw check if there is any empty position
     let roundDraw = !GAME_STATE.includes("") ;// If all cells have value and the previous statement was false then it is a tie
     if (roundDraw) {
       handleStatusDisplay(DRAW_MESSAGE());
