@@ -37,6 +37,16 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    .game-container.game-container div div {
+      position: absolute;
+      opacity: 0;
+      transition: all 2s; }
+    .game-container.game-container div.O div.playerO {
+      opacity: 1;
+      color: red; }
+    .game-container.game-container div.X div.playerX {
+      opacity: 1;
+      color: blue; }
 
 .game-cell {
   border: 2px solid #41858a;

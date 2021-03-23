@@ -1,7 +1,7 @@
 // CONSTANTS
 
-const X_CLASS = '×';
-      CIRCLE_CLASS = '○';
+const X_CLASS = 'X';
+      CIRCLE_CLASS = 'O';
       STATUS_DISPLAY = document.querySelector('.game-notification'),
 GAME_STATE = ['','','','','','','','',''],
 WINNINGS = [
@@ -72,7 +72,12 @@ function startGame() {
       // Add in the corresponding position the value either "X" or "O" in the current state of the game
     GAME_STATE[clickedCellIndex] = currentPlayer;   
     // Add the player's value to the HTML
-    clickedCell.innerHTML = currentPlayer;
+    // clickedCell.innerHTML = currentPlayer;
+    if (currentPlayer === CIRCLE_CLASS){  
+      clickedCell.classList.add(CIRCLE_CLASS);
+    }else {
+      clickedCell.classList.add(X_CLASS) ;
+    }
   }
   
   //handleResultValidation Checking if any player won, lost or tied
