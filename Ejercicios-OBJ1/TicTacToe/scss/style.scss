@@ -50,7 +50,8 @@ h2{
 }
 
 .game-cell{
-    border:2px solid rgb(65, 133, 138);    
+    border:2px solid rgb(65, 133, 138);  
+    border-radius: 10px;  
 }
 
 .game-cell:first-child,

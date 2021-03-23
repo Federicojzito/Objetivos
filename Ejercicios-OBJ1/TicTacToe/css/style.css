@@ -39,7 +39,8 @@ h2 {
     justify-content: center; }
 
 .game-cell {
-  border: 2px solid #41858a; }
+  border: 2px solid #41858a;
+  border-radius: 10px; }
 
 .game-cell:first-child,
 .game-cell:nth-child(2),
