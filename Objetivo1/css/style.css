@@ -41,6 +41,21 @@ body {
 nav {
   position: sticky; }
 
+#index {
+  background-color: lightgray; }
+
+#products {
+  background-color: #fce4c0; }
+
+#servicies {
+  background-color: cadetblue; }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+  .body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); } }
+
 /*Variables*/
 /*Titles*/
 .principal__title {
